@@ -6,27 +6,23 @@ import TestComponent from './test-component';
 class App extends React.Component {
 
   state={
-    toggle: false
+    name: null
   }
 
-  handleClick = event => {
-    event.preventDefault();
-
+  handleClick = (name) => {
     this.setState({
-      toggle: true
+      name: name
     })
 
-    if(this.state.toggle===true){
+    if(this.state.name){
       this.setState({
-        toggle: false
+        name: null
       })
     }
-
-    console.log("this clicked and changed the state");
-    console.log(this.state)
   };
 
   render() {
+    console.log('name is', this.state.name)
     return (
       <div className="map-container">
         <svg
@@ -153,7 +149,7 @@ class App extends React.Component {
             id="ECU1411"
             name="Sucumbios"
           ></path>
-          <g onClick={this.handleClick}>
+          <g onClick={()=> this.handleClick('Sucumbios')}>
           <path
             d="M684.5 209.8l0.6 2.6 1.7 2.8 3.1 1.8 4.7 1.2 3.5 2.1 2.1 2 2.3 3.6-0.1 5.2-1 6.1-2.6 4-2.9 1.7-5.1 1.2-3.6 2.7-4.3 4.1-1.8-2.2-4.9-4.6-1.9-0.7-1.8-0.8-1.9 0.1-3.2-1.1-1.1-0.5-2.5-2.2-1.3-0.5-0.9 0-0.7-0.1-0.5-0.6-0.3-2-0.5-0.9-0.9-1.4-0.9-0.8-2.2-1.8-0.5-1-0.1-0.6 0.2-0.2 0.5 0.1 0.5 0.7 1.5 0.4 0.7 0 0.4 0.2 0.3 1 0.7 0.8 1.5 0 2.1-0.8 3.1-2.4 2.3-1.2 2.1-2.4 0.5-3.5-0.9-1.8-0.4-1.9-0.2-0.5 0.2-0.6 0.7-0.1 0.8-0.5 0.2-1.4-0.2-1.5-1.6-6.4-1.3-3.6-0.5-0.9-0.6-0.7-0.7-1.1-0.3-0.9 1.6-0.3 1.1 0.1 0.4 0 0.9-0.3 4.2 0.2 1.2-0.2 2.1-0.7 1 0 1.8 0.2 0.8 0.5 0.3 0.5-0.1 0.9 0.1 0.4 0.8 0.7 0.2 0.5 0.1 0.5-0.2 1.8-0.1 0.3-0.7 1.1-0.4 1.1 0 0.5 0.1 0.6 0.5 0.6 1 0.5 1.2 0.3z"
             id="ECU5507"
@@ -170,7 +166,7 @@ class App extends React.Component {
           <circle cx="719.2" cy="222.3" id="2"></circle>
         </svg>
         {
-          this.state.toggle ? <TestComponent /> : null
+          this.state.name !== null ? <TestComponent /> : null
         }
       </div>
     );
