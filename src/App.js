@@ -1,6 +1,8 @@
 import React from "react";
 import "./App.css";
 
+import ProvinceData from './data/data'
+
 import TestComponent from './test-component';
 
 class App extends React.Component {
@@ -10,9 +12,12 @@ class App extends React.Component {
   }
 
   handleClick = (name) => {
-    this.setState({
-      name: name
-    })
+    const provinceFound = ProvinceData.find(i => i.name === name);
+    if(provinceFound){
+      this.setState({
+        name: provinceFound
+      })
+    }
 
     if(this.state.name){
       this.setState({
@@ -214,7 +219,7 @@ class App extends React.Component {
           <circle cx="719.2" cy="222.3" id="2"></circle>
         </svg>
         {
-          this.state.name !== null ? <TestComponent /> : null
+          this.state.name !== null ? <TestComponent data={this.state.name} /> : null
         }
       </div>
     );

@@ -2,9 +2,10 @@ import React, { Component } from 'react'
 
 export class TestComponent extends Component {
     render() {
+        console.log(this.props.data.name)
         return (
             <div>
-                <h1>HELLO ECUADOR!</h1>
+                <h1>{this.props.data.name}</h1> 
             </div>
         )
     }
