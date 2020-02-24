@@ -7,10 +7,15 @@ box-sizing: border-box;
 
 
 .map-container{
-    width: 100vh;
-    margin: 30px;  
+    width: 100%;
+    padding: 50px; 
+
 }
 
 path:hover{
     fill: grey;
+}
+
+.map-img{
+    width: 100%;
 }

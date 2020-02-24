@@ -1,7 +1,9 @@
 import React from "react";
 import "./App.css";
 
-import ProvinceData from './data/data'
+import ProvinceData from './data/data';
+
+import Header from './components/header/Header';
 
 import TestComponent from './test-component';
 
@@ -29,8 +31,11 @@ class App extends React.Component {
   render() {
     console.log('name is', this.state.name)
     return (
+      <>
+      <Header />
       <div className="map-container">
         <svg
+          className='map-img'
           baseProfile="tiny"
           fill="darkgreen"
           height="400"
@@ -222,6 +227,7 @@ class App extends React.Component {
           this.state.name !== null ? <TestComponent data={this.state.name} /> : null
         }
       </div>
+      </>
     );
   }
 }
