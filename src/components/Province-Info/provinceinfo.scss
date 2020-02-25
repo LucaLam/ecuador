@@ -1,0 +1,53 @@
+@import '../../styles/fonts.scss';
+
+h1, p, li {
+    color: snow;
+    font-family: 'Lato', ;
+}
+
+.province-info-container{
+
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-content: flex-start;
+.container-heading-and-btn{
+    height: 80px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0;
+
+    .heading{
+        margin: 0;
+    }
+
+    .close-btn{
+        height: 40%;
+        margin: 0;
+        color: lightgrey;
+        border: silver 1px solid;
+        text-decoration: none;
+        border-radius: 3px;
+
+        &:hover{
+            color: whitesmoke;
+            background-color: lightgrey;
+            opacity:0.9;
+        }
+    }
+}
+
+.sub-heading{
+    margin:0;
+    font-size: 19px;
+}
+
+.destination-list{
+    margin: 0;
+    padding: 2%;
+    font-size: 17px;
+}
+
+}

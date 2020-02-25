@@ -9,6 +9,7 @@
     justify-content: space-between;
     align-content: center;
     
+    
 
     .logo{
         width: 8vh;
@@ -16,7 +17,7 @@
     }
 
     .header{
-        color:skyblue;
+        color: snow;
         margin: 0;
         align-self: center;
         font-family: 'Pacifico';
@@ -25,10 +26,14 @@
     }
 
     .about{
-        color: skyblue;
+        color: #F29F05;
         margin: 0;
         align-self: center;
         font-family: 'Pacifico';
         font-size: 15px;
+
+        &:hover{
+            opacity: 0.7;
+        }
     }
 }

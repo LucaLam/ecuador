@@ -11,29 +11,40 @@ export class Map extends Component {
     state={
         name: null
       }
+
+      setStateToNull = () =>{
+        this.setState({
+          name: null
+        });
+      }
     
       handleClick = (name) => {
         const provinceFound = ProvinceData.find(i => i.name === name);
         if(provinceFound){
           this.setState({
             name: provinceFound
-          })
+          });
         }
     
         if(this.state.name){
-          this.setState({
-            name: null
-          })
+          this.setStateToNull();
         }
       };
 
+      handleClose = (event) => {
+        event.preventDefault();
+        this.setStateToNull();
+      };
+
+
     render() {
+      const {name} = this.state
         return (
             <div className="map-container">
         <svg
           className='map-img'
           baseProfile="tiny"
-          fill="darkgreen"
+          fill="#F2B705"
           height="400"
           stroke="#ffffff"
           strokeLinecap="round"
@@ -220,7 +231,7 @@ export class Map extends Component {
           <circle cx="719.2" cy="222.3" id="2"></circle>
         </svg>
         {
-          this.state.name !== null ? <ProvinceInfo data={this.state.name} /> : null
+          name !== null ? <ProvinceInfo data={name} handleClose={this.handleClose} /> : null
         }
       </div>
         )

@@ -7,15 +7,15 @@ import {Link} from 'react-router-dom'
 
 const Header = () => {
     return (
-      <div className="header-container">
+    <div className="header-container">
         <Link to="/" className="logo">
-          <img src={logo} alt="logo" />
+        <img src={logo} alt="logo" />
         </Link>
         <p className="header">All You Need Is Ecuador</p>
         <Link to="/about" className="about">
-          About
+        About
         </Link>
-      </div>
+    </div>
     );
 }
 
