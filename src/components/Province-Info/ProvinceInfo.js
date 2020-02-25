@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 
-export class TestComponent extends Component {
+export class ProvinceInfo extends Component {
     render() {
         const places = this.props.data.places
         console.log(this.props.data.name)
@@ -18,4 +18,4 @@ export class TestComponent extends Component {
     }
 }
 
-export default TestComponent;
+export default ProvinceInfo;
