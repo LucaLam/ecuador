@@ -5,9 +5,7 @@ import Map from './components/map/Map';
 import Header from './components/header/Header';
 
 
-class App extends React.Component {
-
-  render() {
+const App =()=> {
     
     return (
       <>
@@ -16,5 +14,5 @@ class App extends React.Component {
       </>
     );
   }
-}
+  
 export default App;

@@ -1,13 +1,11 @@
-import React, { Component } from 'react'
+import React from 'react'
 
-export class ProvinceInfo extends Component {
-    render() {
-        const places = this.props.data.places
-        console.log(this.props.data.name)
+const ProvinceInfo = ({data}) => {
+        const {places, name, description} = data
         return (
             <div>
-                <h1>{this.props.data.name}</h1> 
-                <p>{this.props.data.description}</p>
+                <h1>{name}</h1> 
+                <p>{description}</p>
                 <ul>
                     {
                         places.map(i => <li>{i}</li>)
@@ -16,6 +14,5 @@ export class ProvinceInfo extends Component {
             </div>
         )
     }
-}
 
 export default ProvinceInfo;

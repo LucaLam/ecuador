@@ -1,15 +1,14 @@
-import React, { Component } from 'react'
+import React from 'react'
 
 import aboutText from '../data/aboutData';
 
-export class About extends Component {
-    render() {
+const About = () => {
         return (
             <div>
                 <p>{aboutText}</p>
             </div>
         )
-    }
+    
 }
 
 export default About
