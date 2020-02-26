@@ -1,3 +1,29 @@
+import cuenca from '../assets/img/cuenca.jpg'
+import guaranda from '../assets/img/guaranda.jpg'
+import ingapirca from '../assets/img/ingapirca.jpeg'
+import tulcan from '../assets/img/tulcan.jpeg'
+import chimborazo from '../assets/img/chimborazo.jpg'
+import cotopaxi from '../assets/img/cotopaxi.jpg'
+import zamora from '../assets/img/zamora.jpg'
+import tungurahua from '../assets/img/tungurahua.jpg'
+import sucumbios from '../assets/img/cuyabeno.jpg'
+import santo_domingo from '../assets/img/Santo_Domingo.jpg'
+import santa_elena from '../assets/img/santa_elena.jpg'
+import quito from '../assets/img/quito.jpg'
+import guayaquil from '../assets/img/guayaquil.jpg'
+import oro from '../assets/img/oro.jpg'
+import esmeraldas from '../assets/img/esmeraldas.jpeg'
+import galapagos from '../assets/img/galapagos.jpg'
+import imbabura from '../assets/img/imbabura.jpeg'
+import pastaza from '../assets/img/pastaza.jpg'
+import orellana from '../assets/img/orellana.jpg'
+import napo from '../assets/img/napo.jpg'
+import morona from '../assets/img/morona.jpg'
+import manabi from '../assets/img/manabi.jpg'
+import loja from '../assets/img/loja.jpg'
+import rios from '../assets/img/rios.jpg'
+
+
 const ProvinceData = [
   {
     name: "Azuay",
@@ -8,7 +34,8 @@ const ProvinceData = [
     "Sangay National Park",
     "Laguna Toreadora",
     "Sigsig"
-]
+],
+image: cuenca
   },
   {
     name: "Bolívar",
@@ -17,7 +44,8 @@ const ProvinceData = [
     "Guaranda, the capital of the Bolívar province",
     "Salinas de Guaranda, also known as Salinas de Tomabela, is an Ecuadorian village at the altitude of 3550 m at the Andes in the province of Bolivar. It is known for its solidarity based economy and cooperative companies that produce cheeses, chocolates, dried mushrooms and fruits, alpaca wool yarn and textiles.",
     "Reserva de Produccion Faunistica Chimborazo",
-]
+],
+image: guaranda
   },
   {
     name: "Cañar",
@@ -26,7 +54,8 @@ const ProvinceData = [
         "Ingapirca, These are the largest known Inca ruins in Ecuador.",
         "Laguna de Culebrillas",
         "Sanctuary of the Virgen del Rocio"
-    ]
+    ],
+    image: ingapirca
   },
   {
     name: "Carchi",
@@ -42,7 +71,8 @@ const ProvinceData = [
       "El Voladero lagoons in El Angel",
       "De Paluz Falls in San Gabriel",
       "Guanderas Scientific Station, Huaca - a biological research station for montane ecosystems."
-    ]
+    ],
+    image: tulcan
   },
   {
     name: "Chimborazo",
@@ -55,7 +85,8 @@ const ProvinceData = [
         "Sangay National Park",
         "Reserva de Produccion Faunistica Chimborazo",
         "Town of Alausí"
-    ]
+    ],
+    image: chimborazo
   },
   {
     name: "Cotopaxi",
@@ -66,7 +97,8 @@ const ProvinceData = [
         "Town of Salcedo",
         "Ilinizas Ecological Reserve",
         "El Corazón Volcano",
-    ]
+    ],
+    image: cotopaxi
   },
   {
     name: "El Oro",
@@ -77,7 +109,8 @@ const ProvinceData = [
         "Piñas",
         "Huaquillas Border City",
         "Arenillas Ecological Reserve",
-    ]
+    ],
+    image: oro
   },
   {
     name: "Esmeraldas",
@@ -88,7 +121,8 @@ const ProvinceData = [
         "Playa de Atacames",
         "Playa Mompiche",
         "Tonsupa Beach",
-    ]
+    ],
+    image: esmeraldas
   },
   {
     name: "Galápagos",
@@ -99,7 +133,8 @@ const ProvinceData = [
         "Black Turtle Cove",
         "Cerro Dragon",
         "Mosquera Island",
-    ]
+    ],
+    image: galapagos
   },
   {
     name: "Guayas",
@@ -109,7 +144,8 @@ const ProvinceData = [
         "Playas, a seaside city",
         "Isla Santay",
         "Churute Mangroves Ecological Reserve",
-    ]
+    ],
+    image: guayaquil
   },
   {
     name: "Imbabura",
@@ -119,7 +155,8 @@ const ProvinceData = [
         "Imbabura Volcano",
         "Cotacachi Volcano",
         "Laguna de San Pablo",
-    ]
+    ],
+    image: imbabura
   },
   {
     name: "Loja",
@@ -129,7 +166,8 @@ const ProvinceData = [
         "Yacurí National Park",
         "Central Bank Museum",
         "City of Loja",
-    ]
+    ],
+    image: loja
   },
   {
     name: "Los Ríos",
@@ -139,7 +177,8 @@ const ProvinceData = [
         "Villarrica National Park",
         "Casino Valdivia",
         "Coñaripe",
-    ]
+    ],
+    image: rios
   },
   {
     name: "Manabí",
@@ -149,7 +188,8 @@ const ProvinceData = [
         "Manta",
         "Plata Island",
         "Machalilla National Park",
-    ]
+    ],
+    image: manabi
   },
   {
     name: "Morona Santiago",
@@ -157,7 +197,8 @@ const ProvinceData = [
     places: [
         "Sangay National Park",
         "Sangay Volcano",
-    ]
+    ],
+    image: morona
   },
   {
     name: "Napo",
@@ -167,7 +208,8 @@ const ProvinceData = [
         "Sumaco National Park",
         "Cayambe Coca Ecological Reserve",
         "AmaZOOnico",
-    ]
+    ],
+    image: napo
   },
   {
     name: "Orellana",
@@ -177,7 +219,8 @@ const ProvinceData = [
         "Sumaco National Park",
         "Cuyabeno Wildlife Reserve",
         "Coca (city)",
-    ]
+    ],
+    image: orellana
   },
   {
     name: "Pastaza",
@@ -187,7 +230,8 @@ const ProvinceData = [
         "Cascada Hola Vida",
         "Llanganates National Park",
         "Puyo",
-    ]
+    ],
+    image: pastaza
   },
   {
     name: "Pichincha",
@@ -197,7 +241,8 @@ const ProvinceData = [
         "Mindo Valley",
         "Cayambe",
         "Cotopaxi National Park",
-    ]
+    ],
+    image: quito
   },
   {
     name: "Santa Elena",
@@ -206,7 +251,8 @@ const ProvinceData = [
     "Playa de Ballenita", 
     "Santa Elena Peninsula", 
     "Punta Carnero, surfing beach"
-    ]
+    ],
+    image: santa_elena
   },
   {
     name: "Santo Domingo de los Tsáchilas",
@@ -215,7 +261,8 @@ const ProvinceData = [
     "Parque Botanico La Carolina", 
     "La Isla del Tapir Zoo", 
     "Cerro Bombolí"
-    ]
+    ],
+    image: santo_domingo
   },
   {
     name: "Sucumbíos",
@@ -224,7 +271,8 @@ const ProvinceData = [
     "Limoncocha National Park", 
     "Reventador Volcano", 
     "Cayambe Coca Ecological Reserve"
-    ]
+    ],
+    image: sucumbios
   },
   {
     name: "Tungurahua",
@@ -233,7 +281,8 @@ const ProvinceData = [
     "Ambato", 
     "Cascada Manto de la Novia", 
     "Volcan Carihuairazo"
-    ]
+    ],
+    image: tungurahua
   },
   {
     name: "Zamora-Chinchipe",
@@ -242,7 +291,8 @@ const ProvinceData = [
     "Yacurí National Park", 
     "Zamora", 
     "Podocarpus National Park"
-    ]
+    ],
+    image: zamora
   }
 ];
 
