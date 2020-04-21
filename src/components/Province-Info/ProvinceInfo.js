@@ -4,7 +4,6 @@ import { v4 as uuidv4 } from 'uuid';
 
 const ProvinceInfo = ({data, handleClose}) => {
         const {places, name, description, image} = data
-        console.log(image)
         return (
             <div className='province-info-container'>
                 <span className='container-heading-and-btn'>
